@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Html Forms</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Html Forms</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <h1>FORMS</h1>
+    <form action="/traitement.php">
+        <label>First Name</label>
+        <input
+                type="text"
+                id="first_Name"
+                name="first_Name"
+                required
+        ><br>
+        <label>Last Name</label>
+        <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                required><br>
+        <label>Age</label>
+        <input type="datetime-local">
+        <input
+                type="number"
+                id="age"
+                name="age"
+                value="45"><br>
 
+        <input type="radio" id="women" name="gender" value="Women" >
+        <label for="women">Women</label>
+        <input type="radio" id="man" name="gender" value="Man">
+        <label for="man">Man</label><br>
+        <label>Phone</label>
+        <input
+            type="tel"
+            pattern="[0-9]{10}"
+        ><br>
+        <label>URL</label>
+        <input
+                type="url"
+                pattern="https://.*"
+                size="30"
+                required
+        ><br>
+        <label>Mail</label><br>
+        <input
+                type="email"
+                size="30"
+        ><br>
+        <label>Password(4 characters)</label>
+        <input
+                type="password"
+                minlength="4"
+                required
+        >
+        <hr>
+        <label>Download</label>
+        <i class="fas fa-download" style="font-size: 24px"></i>
+        <i class="fas fa-band-aid" ></i>
+        <input
+                type="file"
+                accept="image/jpeg, image/png"
+        >
+        <input type="hidden" value="mon numero de compte">
+        <input type="submit" value="envoyer">
+        <input type="reset" value="Cancel">
+        <i class='fas fa-exclamation-triangle' style='font-size:48px;color:red'></i>
+    </form>
 </body>
 </html>
