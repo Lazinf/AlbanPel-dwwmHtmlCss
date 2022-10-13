@@ -4,16 +4,81 @@
         <meta charset="UTF-8">
         <title>Welcome DWWM!!!</title>
         <link rel="icon" type="image/x-icon" href="public/media/images/favicon.ico">
-    </head>
-    <body style="background-color: #5F9EA0FF">
-        <h1 style="font-size: 15px">Mon en-tete 1</h1>
+        <style>
+            body {background-color: #5F9EA0FF}
+            h1 {
+                font-size: 15px;
+                color: black;
+                }
+            td {border: black 1px solid}
+            th {border: black 1px solid}
+            table {border: black 1px solid}
+            p {
+                color: red;
+            }
+            .paragraphCenter{
+                color: #232020;
+                text-align: center;
+            }
+            .styleParagraph{
+                color: blue;
+                background-color: #fff0ee;
+                font-family: Arial;
+            }
+            .menu{
+                padding: 30px;
+                background-color: #1179c4;
+                color: white;
+                border: black 2px solid;
+            }
+            a:visited{
+                color: white;
+            }
+            a:link{
+                text-decoration: none;
+                margin-right: 30px;
+            }
+            #textFooter {
+                text-align: center;
+                color: black;
+            }
+            footer {
+                padding: 30px;
+                background-color: #d5cece;
+                color: white;
+                border: black 2px solid;
+            }
+            .title {
+                display: block;
+                font-size: 1.5em;
+                margin-block-start: 0.83em;
+                margin-block-end: 0.83em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                font-weight: bold;
+            }
 
-        <p style="color: #232020; text-align: center" title="mon titre de paragraphe">
+
+        </style>
+    </head>
+    <body>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="page1.html">Page 1</a>
+        </nav>
+
+        <h1>Mon en-tete 1</h1>
+
+        <h2>Pas de chance!! </h2>
+        <iframe src="http://www.infowebmaster.fr/outils/simple/generateur-nombre-aleatoire-01.php" frameborder="0" height="144" scrolling="no" width="220"></iframe>
+
+
+        <p class="paragraphCenter" title="mon titre de paragraphe">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec orci facilisis, laoreet libero vulputate, imperdiet ligula. Phasellus venenatis vitae lectus eget finibus. Fusce sed arcu nec mi semper posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut elit quam, vulputate ut nibh eget, suscipit tempus lorem. Sed tristique ante tellus, ac faucibus tortor blandit quis. Duis cursus elementum leo, vestibulum rhoncus elit fringilla cursus. Donec eget sem sodales, vulputate nulla vitae, dignissim lectus. Vestibulum ac nibh vestibulum, iaculis massa sit amet, porttitor enim. Nulla facilisi. Fusce sodales justo dolor. Proin maximus erat a fermentum lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed mollis aliquet arcu, id faucibus felis mattis ac. Duis iaculis pellentesque purus. In id odio vel justo sollicitudin malesuada eu vitae neque.
         </p>
         <hr>
 
-        <p style="color: blue; background-color: #fff0ee; font-family: Arial" , title="mon titre de paragraphe">
+        <p class="styleParagraph" , title="mon titre de paragraphe">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
             Nunc nec orci facilisis, laoreet libero vulputate, imperdiet ligula.<br>
             Phasellus venenatis vitae lectus eget finibus. Fusce sed arcu nec mi semper posuere.<br>
@@ -24,6 +89,9 @@
             Sed mollis aliquet arcu, id faucibus felis mattis ac. Duis iaculis pellentesque purus. In id odio vel justo sollicitudin malesuada eu vitae neque.
         </p>
         <hr>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec orci facilisis, laoreet libero vulputate, imperdiet ligula. Phasellus venenatis vitae lectus eget finibus. Fusce sed arcu nec mi semper posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut elit quam, vulputate ut nibh eget, suscipit tempus lorem. Sed tristique ante tellus, ac faucibus tortor blandit quis. Duis cursus elementum leo, vestibulum rhoncus elit fringilla cursus. Donec eget sem sodales, vulputate nulla vitae, dignissim lectus. Vestibulum ac nibh vestibulum, iaculis massa sit amet, porttitor enim. Nulla facilisi. Fusce sodales justo dolor. Proin maximus erat a fermentum lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed mollis aliquet arcu, id faucibus felis mattis ac. Duis iaculis pellentesque purus. In id odio vel justo sollicitudin malesuada eu vitae neque.
+        </p>
         <pre>
             Sed mollis aliquet arcu, id faucibus felis mattis ac. Duis iaculis pellentesque purus. In id odio vel justo sollicitudin malesuada eu vitae neque.
         </pre>
@@ -33,29 +101,56 @@
         <pre>
            In id odio vel justo sollicitudin malesuada eu vitae neque.
         </pre>
-
         <a href="https://www.amazon.fr">Lien Amazon</a>
         <img src="./public/media/images/alban.png" alt="Ma super image" width="100" height="100">
-        <table style="border: black 2px solid">
+        <div class="title">Table</div>
+        <table >
             <tr >
                 <th>user</th>
-                <th>First name</th>
-                <th>name</th>
+                <th >First name</th>
+                <th >name</th>
             </tr>
             <tr>
-                <td style="border: black 1px solid">1</td>
-                <td style="border: black 1px solid">KOUTCHENA</td>
-                <td style="border: black 1px solid">Patrick</td>
+                <td>1</td>
+                <td >KOUTCHENA</td>
+                <td >Patrick</td>
             </tr>
             <tr>
-                <td style="border: black 1px solid">2</td>
-                <td style="border: black 1px solid">POURGEAUX</td>
-                <td style="border: black 1px solid">Jéremie</td>
-            </tr>
-            <tr>
-
+                <td>2</td>
+                <td>POURGEAUX</td>
+                <td>Jéremie</td>
             </tr>
         </table>
+        <div class="title">List</div>
+        <ul>
+            <li>point 1</li>
+            <li>point 2</li>
+            <li>point 3</li>
+        </ul>
+        <div class="title">List by order</div>
+        <ol>
+            <li>point 1</li>
+            <li>point 2</li>
+            <li>point 3</li>
+        </ol>
+        <div class="title">Description list</div>
+        <dl>
+            <dt>Alban</dt>
+            <dd>-- dev fullstack java, php, js, node ... </dd>
+            <dt>Dicier</dt>
+            <dd>-- dev bootstrap</dd>
+        </dl>
+        <div class="title">Another tag</div>
+        <a href="https://www.tutorialrepublic.com/html-reference/html5-tags.php" target="_blank">All tag's</a>
+        <address>
+            alban
+            145 rue de charenton
+            paris
+        </address>
+
+    <footer>
+        <p id="textFooter">Footer</p>
+    </footer>
     </body>
 </html>
 
