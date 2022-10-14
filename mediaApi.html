@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media / API</title>
+
+        <!-- CSS -->
+        <style>
+            .title {
+                display: block;
+                font-size: 1.5em;
+                margin-block-start: 0.83em;
+                margin-block-end: 0.83em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title">Audio</div>
+        <!--Formulaire-->
+        <form action="">
+            <label>Upload</label>
+            <i class="fas fa-download" style="font-size: 24px"></i>
+            <i class="fas fa-band-aid" ></i>
+            <input
+                    type="file"
+                    accept="audio/mpeg"
+            >
+        </form>
+        <hr>
+        <div class="title">Afficher une vidéo depuis mon serveur</div>
+        <video
+            width="320"
+            height="240"
+            controls>
+            <source src="public/media/videos/video.mp4" type="video/mp4">
+        </video>
+        <hr>
+        <div class="title">Importer une vidéo par Iframe</div>
+        <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/jZm8eSX7MTc"
+                title="Salut " frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+        </iframe>
+        <hr>
+        <div class="title">Géolocalisation</div>
+        <button onclick="getLocation()">Localise moi</button>
+        <p id="location"></p>
+
+        <script>
+            var x = document.getElementById("location");
+
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                }
+                else {
+                    x.innerHTML = "Localisation incompatible avec votre navigateur"
+                }
+            }
+
+            function showPosition(position) {
+                console.log("Objet position:", position)
+                x.innerHTML =
+                    "Latitude: " + position.coords.latitude +
+                    "<br>Longitude: " + position.coords.longitude
+            }
+
+        </script>
+
+
+
+    </body>
+</html>
