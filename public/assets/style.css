@@ -1,0 +1,52 @@
+body {background-color: #5F9EA0FF}
+h1 {
+    font-size: 15px;
+    color: black;
+}
+td {border: black 1px solid}
+th {border: black 1px solid}
+table {border: black 1px solid}
+p {
+    color: red;
+}
+.paragraphCenter{
+    color: #232020;
+    text-align: center;
+}
+.styleParagraph{
+    color: blue;
+    background-color: #fff0ee;
+    font-family: Arial;
+}
+.menu{
+    padding: 30px;
+    background-color: #1179c4;
+    color: white;
+    border: black 2px solid;
+}
+a:visited{
+    color: white;
+}
+a:link{
+    text-decoration: none;
+    margin-right: 30px;
+}
+#textFooter {
+    text-align: center;
+    color: black;
+}
+footer {
+    padding: 30px;
+    background-color: #d5cece;
+    color: white;
+    border: black 2px solid;
+}
+.title {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
